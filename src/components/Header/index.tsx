@@ -63,6 +63,13 @@ const ButtonContainer = styled.div`
     `}
 `
 
+const Icon = styled.span`
+    ${tw`
+        font-light
+        pl-2
+    `}
+`
+
 const Header = () => {
     return (
         <NavbarContainer>
@@ -72,19 +79,27 @@ const Header = () => {
                 <NavbarItem>
                     Website
                     {/* <FontAwesomeIcon icon="fa-solid fa-check-square" /> */}
-                    <FaAngleDown />
+                    <Icon>
+                        <FaAngleDown />
+                    </Icon>
                 </NavbarItem>
                 <NavbarItem>
                     Sell
-                    <FaAngleDown />
+                    <Icon>
+                        <FaAngleDown />
+                    </Icon>
                 </NavbarItem>
                 <NavbarItem>
                     Marketing
-                    <FaAngleDown />
+                    <Icon>
+                        <FaAngleDown />
+                    </Icon>
                 </NavbarItem>
                 <NavbarItem>
                     Manager
-                    <FaAngleDown />
+                    <Icon>
+                        <FaAngleDown />
+                    </Icon>
                 </NavbarItem>
             </Navbar>
             <ButtonContainer>
